@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Photographer</title>
+    <link rel="stylesheet" href="search-style.css">
+    <script src="https://kit.fontawesome.com/7bd5142aff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="search-nav-bar">
+            <div class="nav-left">
+                <ul class="left-list">
+                    <li class="left-list-item"><a class="nav-item" href="#">Home</a></li>
+                    <li class="left-list-item"><a class="nav-item" href="#">Service</a></li>
+                    <li class="left-list-item"><a class="nav-item" href="#">Portfolio</a></li>
+                    <li class="left-list-item"><a class="nav-item" href="#">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <i class="right-icons fa-regular fa-heart"></i>
+                    <i class="right-icons fa-solid fa-wave-square"></i>
+                    <i class="right-icons fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="user-icon">
+                    <div class="icon-inside"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="Form" id="Form">
+            <section class="searching">
+            <h1 class="search-heading">Discover Photographer of <br> Your Local Area</h1>
+            <p class="search-description">Capture the moments that matter most. Explore a world of skilled photographers in your area, ready to turn you vision into <br>
+                endless memories.</p>
+        </section>
+
+        <section class="search-bar">
+            <select name="type1" id="type1" class="search-select">
+                <option value="Portrait Photographer">Portrait Photographer</option>
+                <option value="Landscape Photographer">Landscape Photographer</option>
+                <option value="Wildlife Photographer">Wildlife Photographer</option>
+                <option value="Fashion Photographer">Fashion Photographer</option>
+                <option value="Documentary Photographer">Documentary Photographer</option>
+                <option value="Sports Photographer">Sports Photographer</option>
+                <option value="Architectural Photographer">Architectural Photographer</option>
+                <option value="Food Photographer">Food Photographer</option>
+                <option value="Fine Art Photographer">Fine Art Photographer</option>
+                <option value="Street Photographer">Street Photographer</option>
+            </select>
+        </section>
+        <section class="search-bar">
+            <select name="address1" id="address1" class="search-select">
+                <option value="London">London</option>
+                <option value="Manchester">Manchester</option>
+                <option value="Birmingham">Birmingham</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Edinburgh">Edinburgh</option>
+                <option value="Glasgow">Glasgow</option>
+                <option value="Cardiff">Cardiff</option>
+                <option value="Belfast">Belfast</option>
+                <option value="Bristol">Bristol</option>
+                <option value="Oxford">Oxford</option>
+            </select>
+        </section>
+        <div class="search-button">
+            <button class="search-btn" type="submit">Search</button>
+        </div>
+        </form>
+
+        <section class="phototype-table">
+            <div class="photographerList" id="photographerList">
+                <table  id="photographerTable" style="display: none;">
+                <thead id="photographerTableHead">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Type</th>
+                        <th>Address</th>
+                        <th>Rating</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="photographerTableBody">
+                </tbody>
+            </table>
+            </div>
+            
+        </section>
+        
+    </main>
+    <footer>
+        <h2 class="footer-title">
+            Recognized for Excellence: 10,000+ Satisfied Clients and Counting
+        </h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
